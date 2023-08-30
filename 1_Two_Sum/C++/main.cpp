@@ -13,6 +13,7 @@ public:
             if(repeat.count(nums[i])) {
                 ans.push_back(repeat[nums[i]]);
                 ans.push_back(i);
+				return ans;
             }
             repeat[target - nums[i]] = i;
         }
